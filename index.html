@@ -1,13 +1,234 @@
 <!DOCTYPE html>
-
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <title>Portfolio Maxime</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <h1>Portfolio Maxime</h1>
-        </header>
+        <div class="container">
+            <div class="header">
+                <h1>BARBER Maxime</h1>
+                <p>Développeur mobile, Unity et d'applications Windows</p>
+            </div>
+            <div class="section">
+                <h2>Présentation</h2>
+                <p>
+                    Étudiant en troisième année de BUT Informatique, j'ai pu acquérir des connaissances et des compétences dans le développement informatique ces dernières années. C'est ce que vous allez découvrir ici en parcourant les différents projets que je vais vous présenter, qui sont à la fois dans le cadre de l'Université, personnels et professionnels.
+                </p>
+                <h3>Hobbies</h3>
+                <p>
+                    Voir partie <a href="#autres-projets">"Autres Projets Personnels"</a>.
+                </p>
+                <h3>Contact</h3>
+                <p>
+                    email: maxime.b0306@gmail.com
+                </p>
+            </div>
+            <div class="section">
+                <h2>Projets Universitaires</h2>
+                <div class="project">
+                    <h3>GSplat</h3>
+                    <h4>Description</h4>
+                    <p>
+                        GSplat est un projet réalisé en trinome qui permet de visualiser un modèle 3D en réalité virtuelle à partir de photos prises depuis son smartphone en utilisant la méthode du Gaussian-Splatting.<br>
+                        Depuis l'application mobile, on peut créer nos différents projets et y ajouter nos photos, soit présentes dans la gallerie, soit directement en prenant une photo depuis l'application. Une fois toutes les photos prises, on peut envoyer les photos au serveur qui va s'occuper de générer le modèle 3D avec la méthode du Gaussian-Splatting. Une fois le modèle 3D généré, on peut le récupérer depuis l'application Unity présente sur son ordinateur et visualiser le modèle 3D en réalité virtuelle.<br>
+                        Notez qu'il est important d'activer l'option "Position" de son smartphone, la méthode du Gaussian-Splatting ayant besoin de la position des photos pour générer le modèle.<br>
+                        Par manque de temps, nous n'avons pas pu faire l'application en réalité virtuelle, nous avons donc utilisé une application déjà existante, GaussianSplattingVRViewerUnity où il suffit de placé le résultat de la génération au niveau de l'exécutable.
+                    </p>
+                    <h4>Taches</h4>
+                    <p>
+                        Les taches que j'ai réalisé au seins de ce projet sont:
+                        <ul>
+                            <li>Rédaction en partie du cahier des charges</li>
+                            <li>Développement de l'application mobile</li>
+                            <li>Recherche pour une application unity pour visualiser un modèle 3D fait à partir de Gaussian-Splatting en réalité virtuelle</li>
+                            <li>Rédaction en partie du rapport</li>
+                            <li>Rédaction du manuel d'utilisation</li>
+                        </ul>
+                    </p>
+                    <h4>Techonologies</h4>
+                    <p>
+                        Pour l'application mobile, on a utilié le framwork <a href="https://learn.microsoft.com/fr-fr/previous-versions/xamarin/get-started/what-is-xamarin">Xamarin</a>, un framwork .net (C# + Xaml).<br> 
+                        Concernant le serveur, on a utilisé <a href="https://nodejs.org/en/">NodeJs</a>.<br>
+                        Et enfin comme dit précédemment, l'application en réalité virtuelle est réalisé à partir d'<a href="https://unity.com/fr">Unity</a> (C#).<br>
+                        Pour le dépôt, on s'est servis de <a href="https://about.gitlab.com/">GitLab</a>.
+                    </p>
+                    <h4>Photos de la partie application mobile</h4>
+                    <img src="photos/GSplat1.png" alt="Photo application mobile GSplat">
+                    <img src="photos/GSplat2.png" alt="Photo application mobile GSplat">
+                    <img src="photos/GSplat3.png" alt="Photo application mobile GSplat">
+                    <h4>Liens</h4>
+                    <ul>
+                        <li><a href="https://github.com/graphdeco-inria/gaussian-splatting">Git du projet Gaussian-Splatting</a></li>
+                        <li><a href="https://learn.microsoft.com/fr-fr/previous-versions/xamarin/get-started/what-is-xamarin">Xamarin</a></li>
+                        <li><a href="https://nodejs.org/en/">NodeJs</a></li>
+                        <li><a href="https://unity.com/fr">Unity</a></li>
+                        <li><a href="https://about.gitlab.com/">GitLab</a></li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>Vampire Survivor</h3>
+                    <h4>Description</h4>
+                    <p>
+                        Ce projet est un jeu vidéo mobile réalisé en binôme en troisième année de BUT Informatique. Il reprend l’idée du jeu original Vampire Survivor : une vague d’ennemis essaient de nous tuer et nous devons survivre le plus longtemps possible en obtenant des bonus à chaque niveau gagné.<br>
+                        Pour tuer les ennemis, il faut simplement appuyer sur un ennemi et il subira des dégâts. Dès qu’il n’a plus de vie, il meurt. Si un ennemi arrive à vous toucher, vous subissez des dégâts. La partie s’arrête lorsque votre vie arrive à 0. Il y a 3 bonus : boost de vie, boost de force et boost de vitesse de déplacement. Pour augmenter de niveau, vous devez simplement faire des dégâts à vos ennemis qui va vous générer de l’exp, et au bout d’un certain nombre d’exp gagné, vous gagnez en niveau.
+                    </p>
+                    <h4>Taches</h4>
+                    <p>
+                        Les taches que j'ai réalisé au seins de ce projet sont:
+                        <ul>
+                            <li>Gestion de la partie</li>
+                            <li>Correction de bugs sur le menu</li>
+                            <li>Connexion entre le menu et une partie</li>
+                            <li>Matériaux des objets</li>
+                            <li>Génération de l'apk</li>
+                        </ul>
+                    </p>
+                    <h4>Techonologies</h4>
+                    <p>
+                        Pour ce projet, on a utilisé le moteur de jeu <a href="https://unity.com/fr">Unity</a>.<br>
+                        On a utilisé <a href="https://github.com/">GitHub</a> pour le dépôt.
+                    </p>
+                    <h4>Photos</h4>
+                    <img class="photos" src="photos/VampireSurvivor1.png" alt="Photo Vampire Survivor">
+                    <img class="photos" src="photos/VampireSurvivor2.png" alt="Photo Vampire Survivor">
+                    <img class="photos" src="photos/VampireSurvivor3.png" alt="Photo Vampire Survivor">
+                    <img class="photos" src="photos/VampireSurvivor4.png" alt="Photo Vampire Survivor">
+                    <h4>Liens</h4>
+                    <ul>
+                        <li><a href="https://unity.com/fr">Unity</a></li>
+                        <li><a href="https://github.com/">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Expériences professionnelles</h2>
+                <div class="project">
+                    <h3>EvoTech</h3>
+                    <h4>Description</h4>
+                    <p>
+                        Durant mon stage dans l'entreprise <a href="https://www.gimel.fr/">Gimel Lavergne</a> du 15 mai 2023 au 28 juillet 2023, j'ai eu comme tache d'ajouter une fonctionnalité sur une de leurs applications déjà existantes EvoTech.<br>
+                        Cette fonctionnalité a pour but de permettre à un professionnel qui part en rendez-vous chez un client, d'ajouter au rendez-vous des ajouter des articles qu'il prend avec lui dans sa camionnette, et de pouvoir facturer le client ainsi que de retirer les articles du stock à la fin de la visite s'il les a utilisés.
+                    </p>
+                    <h4>Taches</h4>
+                    <p>
+                        Mes taches pour cette fonctionnalité sont:
+                        <ul>
+                            <li>Base de données locale</li>
+                            <li>Développement de toute la fonctionnalité</li>
+                        </ul>
+                    </p>
+                    <h4>Techonologies</h4>
+                    <p>
+                        Toutes les applications chez <a href="https://www.gimel.fr/">Gimel Lavergne</a> sont développées à l'aide du framwork <a href="https://learn.microsoft.com/fr-fr/previous-versions/xamarin/get-started/what-is-xamarin">Xamarin</a>.
+                    </p>
+                    <h4>Liens</h4>
+                    <ul>
+                        <li><a href="https://learn.microsoft.com/fr-fr/previous-versions/xamarin/get-started/what-is-xamarin">Xamarin</a></li>
+                        <li><a href="https://www.gimel.fr/">Gimel Lavergne</a></li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>EvoStock</h3>
+                    <h4>Description</h4>
+                    <p>
+                        Durant mon alternance dans l'entreprise <a href="https://www.gimel.fr/">Gimel Lavergne</a> du 1er septembre 2023 jusqu'à maintenant, j'ai comme tache de développer 2 grandes parties de l'applciation EvoStock.<br>
+                        Mes parties ont comme objectifs de permettre à un magasinier de traiter la réception d'une ou plusieurs commandes fournisseurs et de générer l'entrée fournisseur directement depuis l'application. Le magasinier peut aussi déclarer des anomalis/litiges si le cas se présente. L'autre partie permet de générer le retour fournisseur suite aux litiges déclarés depuis la réception.
+                    </p>
+                    <h4>Taches</h4>
+                    <p>
+                        Mes taches pour cette fonctionnalité sont:
+                        <ul>
+                            <li>Cahier des charges</li>
+                            <li>Maquettes</li>
+                            <li>Base de données locale</li>
+                            <li>Développement de toute la partie réception</li>
+                            <li>Développement de toute la partie retour fournisseur</li>
+                            <li>Développement du métier pour la gestion des litiges</li>
+                        </ul>
+                    </p>
+                    <h4>Techonologies</h4>
+                    <p>
+                        Toutes les applications chez <a href="https://www.gimel.fr/">Gimel Lavergne</a> sont développées à l'aide du framwork <a href="https://learn.microsoft.com/fr-fr/previous-versions/xamarin/get-started/what-is-xamarin">Xamarin</a>.<br>
+                        Concernant la partie métier, elle est développée en .Net <a href="https://learn.microsoft.com/fr-fr/dotnet/desktop/wpf/overview/?view=netdesktop-8.0">WPF</a> (C# et XAML aussi).
+                    </p>
+                    <h4>Liens</h4>
+                    <ul>
+                        <li><a href="https://learn.microsoft.com/fr-fr/previous-versions/xamarin/get-started/what-is-xamarin">Xamarin</a></li>
+                        <li><a href="https://learn.microsoft.com/fr-fr/dotnet/desktop/wpf/overview/?view=netdesktop-8.0">WPF</a></li>
+                        <li><a href="https://www.gimel.fr/">Gimel Lavergne</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Projets Personnels</h2>
+                <div class="project">
+                    <h3>Jeu vidéo</h3>
+                    <h4>Descritpion</h4>
+                    <p>
+                        Du côté personnel, j'ai qu'un seul projet en cours car il me prend énormément de mon temps au vu de son temps de développement assez conséquent. En effet, ayant comme objectif avec un ami d'enfance de monter notre entreprise de jeu vidéo dans quelques années, j'ai commencé à développer le premier jeu qui sera commercialisé par cette futur entreprise.<br>
+                        Pour des raisons de concurrence, je ne peux pas parler en détail de son contenu, mais il est comme une sorte de remake du jeu <a href="https://www.nintendo.com/fr-fr/Jeux/Jeux-a-telecharger-sur-Nintendo-3DS/Steel-Diver-Sub-Wars-851885.html">Steel Diver: Sub Wars</a> sorti en février 2014 par <a href="https://www.nintendo.com/fr-fr/">Nintendo</a> sur les consoles de la famille <a href="https://www.nintendo.com/fr-fr/Hardware/Gamme-Nintendo-3DS/Famille-Nintendo-3DS-94560.html">Nintendo 3DS</a> à l'excéption de la partie mission qui ne sera pas présent dans le jeu. Contrairement au jeu orignel, celui-ci se jouera sur ordinateur (pour l'instant compatible Windows seulement).
+                    </p>
+                    <h4>Taches</h4>
+                    <p>
+                        Étant seul pour l'instant à développer ce jeu, j'effectue des taches très variée dans le développement du jeu comme:
+                        <ul>
+                            <li>Cahier des charges</li>
+                            <li>Maquettes</li>
+                            <li>Développement back-end</li>
+                            <li>UI</li>
+                            <li>Modèle 3D</li>
+                            <li>Début de la traduction</li>
+                            <li>Base de données</li>
+                        </ul>
+                    </p>
+                    <h4>Techonologies</h4>
+                    <p>
+                        Pour ce projet, j'utilise le moteur de jeu <a href="https://unity.com/fr">Unity</a>.<br>
+                        La base de données est une base de données <a href="https://www.sqlite.org/">SQLite</a>.<br>
+                        Le serveur sera fait à l'aide de <a href="https://nodejs.org/en/">NodeJs</a>.<br>
+                        Enfin, le serveur sera contenairisé dans un conteneur <a href="https://www.docker.com/">Docker</a> pour plus d'isolation avec le reste de la machine.<br>
+                        J'utilise aussi <a href="https://github.com/">GitHub</a> pour le dépôt.
+                    </p>
+                    <h4>Liens</h4>
+                    <li><a href="https://nodejs.org/en/">NodeJs</a></li>
+                    <li><a href="https://unity.com/fr">Unity</a></li>
+                    <li><a href="https://www.sqlite.org/">SQLite</a></li>
+                    <li><a href="https://www.docker.com/">Docker</a></li>
+                    <li><a href="https://github.com/">GitHub</a></li>
+                </div>
+            </div>
+            <div class="section">
+                <h2 id="autres-projets">Autres Projets Personnels</h2>
+                <p>
+                    Dans cette partie, je vais parler de mes projets en cours qui ne sont pas en lien avec le développement informatique.
+                </p>
+                <div class="project">
+                    <h3>Null Island map</h3>
+                    <h4>Description</h4>
+                    <p>
+                        Ayant beaucoup joué à <a href="https://eurotrucksimulator2.com/">Euro Truck Simulator 2</a>, un jeu de simulation de conduite de poids lourds, ce jeu permet aussi de créer nos propres mondes en les modélisants. C'est ce que j'ai commencé à faire depuis plus d'un an maintenant en créant mon propre monde virtuel à l'échelle réelle basé dans l'espris français en ayant comme but d'être la plus grande possible.<br>
+                        Modéliser ce monde demande énormément de temps aisin que beaucoup de créativité, ce qui est un de mes défauts, qui me le fait donc travailler.<br>
+                        A ce jour, je n'ai pas encore assez modélisé de villes/villages pour être suffisant pour sortir une première version de ce mod.
+                    </p>
+                </div>
+                <div class="project">
+                    <h3>Musique</h3>
+                    <h4>Description</h4>
+                    <p>
+                        Depuis quelques mois, j'ai commencé à faire de la MAO (Musique Assistée par Ordinateur). Cela conssite à partir d'un logiciel de montage audio, de créer des musiques à l'aide de bruitages assemblés les uns avec les autres.<br>
+                        Pour créer mes musiques, je me sers du logiciel <a href="https://www.reaper.fm/">Reaper</a> pour les différentes pistes et <a href="https://vital.audio/">Vital</a> pour les bruitages.
+                        Ayant commencé depuis peu, je n'ai pas encore publié de musique. Mais une fois finie mes musiques seront publiées <a href="https://www.youtube.com/channel/UCZIvMO5kmJNqdHv2e8ZjSOg">ici</a>. 
+                    </p>
+                    <h4>Liens</h4>
+                    <ul>
+                        <li><a href="https://www.youtube.com/channel/UCZIvMO5kmJNqdHv2e8ZjSOg">Chaine Youtube</a></li>
+                        <li><a href="https://www.reaper.fm/">Reaper</a></li>
+                        <li><a href="https://vital.audio/">Vital</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
