@@ -1,4 +1,33 @@
+html{
+    background-color: cadetblue;
+}
+
 h1{
     text-align: center;
     text-decoration: underline;
+    font-size: 500%;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 200%;
+}
+
+#centre{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 200%;
+    text-align: center;
+}
+
+#description{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 200%;
+    text-align: justify;
+}
+
+#sommaire{
+    font-size: 200%;
 }
