@@ -1,234 +1,837 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>Portfolio Maxime</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <h1>BARBER Maxime</h1>
-                <p>Développeur mobile, Unity et d'applications Windows</p>
-            </div>
-            <div class="section">
-                <h2>Présentation</h2>
-                <p>
-                    Étudiant en troisième année de BUT Informatique, j'ai pu acquérir des connaissances et des compétences dans le développement informatique ces dernières années. C'est ce que vous allez découvrir ici en parcourant les différents projets que je vais vous présenter, qui sont à la fois dans le cadre de l'Université, personnels et professionnels.
-                </p>
-                <h3>Hobbies</h3>
-                <p>
-                    Voir partie <a href="#autres-projets">"Autres Projets Personnels"</a>.
-                </p>
-                <h3>Contact</h3>
-                <p>
-                    email: maxime.b0306@gmail.com
-                </p>
-            </div>
-            <div class="section">
-                <h2>Projets Universitaires</h2>
-                <div class="project">
-                    <h3>GSplat</h3>
-                    <h4>Description</h4>
-                    <p>
-                        GSplat est un projet réalisé en trinome qui permet de visualiser un modèle 3D en réalité virtuelle à partir de photos prises depuis son smartphone en utilisant la méthode du Gaussian-Splatting.<br>
-                        Depuis l'application mobile, on peut créer nos différents projets et y ajouter nos photos, soit présentes dans la gallerie, soit directement en prenant une photo depuis l'application. Une fois toutes les photos prises, on peut envoyer les photos au serveur qui va s'occuper de générer le modèle 3D avec la méthode du Gaussian-Splatting. Une fois le modèle 3D généré, on peut le récupérer depuis l'application Unity présente sur son ordinateur et visualiser le modèle 3D en réalité virtuelle.<br>
-                        Notez qu'il est important d'activer l'option "Position" de son smartphone, la méthode du Gaussian-Splatting ayant besoin de la position des photos pour générer le modèle.<br>
-                        Par manque de temps, nous n'avons pas pu faire l'application en réalité virtuelle, nous avons donc utilisé une application déjà existante, GaussianSplattingVRViewerUnity où il suffit de placé le résultat de la génération au niveau de l'exécutable.
-                    </p>
-                    <h4>Taches</h4>
-                    <p>
-                        Les taches que j'ai réalisé au seins de ce projet sont:
-                        <ul>
-                            <li>Rédaction en partie du cahier des charges</li>
-                            <li>Développement de l'application mobile</li>
-                            <li>Recherche pour une application unity pour visualiser un modèle 3D fait à partir de Gaussian-Splatting en réalité virtuelle</li>
-                            <li>Rédaction en partie du rapport</li>
-                            <li>Rédaction du manuel d'utilisation</li>
-                        </ul>
-                    </p>
-                    <h4>Techonologies</h4>
-                    <p>
-                        Pour l'application mobile, on a utilié le framwork <a href="https://learn.microsoft.com/fr-fr/previous-versions/xamarin/get-started/what-is-xamarin">Xamarin</a>, un framwork .net (C# + Xaml).<br> 
-                        Concernant le serveur, on a utilisé <a href="https://nodejs.org/en/">NodeJs</a>.<br>
-                        Et enfin comme dit précédemment, l'application en réalité virtuelle est réalisé à partir d'<a href="https://unity.com/fr">Unity</a> (C#).<br>
-                        Pour le dépôt, on s'est servis de <a href="https://about.gitlab.com/">GitLab</a>.
-                    </p>
-                    <h4>Photos de la partie application mobile</h4>
-                    <img src="photos/GSplat1.png" alt="Photo application mobile GSplat">
-                    <img src="photos/GSplat2.png" alt="Photo application mobile GSplat">
-                    <img src="photos/GSplat3.png" alt="Photo application mobile GSplat">
-                    <h4>Liens</h4>
-                    <ul>
-                        <li><a href="https://github.com/graphdeco-inria/gaussian-splatting">Git du projet Gaussian-Splatting</a></li>
-                        <li><a href="https://learn.microsoft.com/fr-fr/previous-versions/xamarin/get-started/what-is-xamarin">Xamarin</a></li>
-                        <li><a href="https://nodejs.org/en/">NodeJs</a></li>
-                        <li><a href="https://unity.com/fr">Unity</a></li>
-                        <li><a href="https://about.gitlab.com/">GitLab</a></li>
-                    </ul>
-                </div>
-                <div class="project">
-                    <h3>Vampire Survivor</h3>
-                    <h4>Description</h4>
-                    <p>
-                        Ce projet est un jeu vidéo mobile réalisé en binôme en troisième année de BUT Informatique. Il reprend l’idée du jeu original Vampire Survivor : une vague d’ennemis essaient de nous tuer et nous devons survivre le plus longtemps possible en obtenant des bonus à chaque niveau gagné.<br>
-                        Pour tuer les ennemis, il faut simplement appuyer sur un ennemi et il subira des dégâts. Dès qu’il n’a plus de vie, il meurt. Si un ennemi arrive à vous toucher, vous subissez des dégâts. La partie s’arrête lorsque votre vie arrive à 0. Il y a 3 bonus : boost de vie, boost de force et boost de vitesse de déplacement. Pour augmenter de niveau, vous devez simplement faire des dégâts à vos ennemis qui va vous générer de l’exp, et au bout d’un certain nombre d’exp gagné, vous gagnez en niveau.
-                    </p>
-                    <h4>Taches</h4>
-                    <p>
-                        Les taches que j'ai réalisé au seins de ce projet sont:
-                        <ul>
-                            <li>Gestion de la partie</li>
-                            <li>Correction de bugs sur le menu</li>
-                            <li>Connexion entre le menu et une partie</li>
-                            <li>Matériaux des objets</li>
-                            <li>Génération de l'apk</li>
-                        </ul>
-                    </p>
-                    <h4>Techonologies</h4>
-                    <p>
-                        Pour ce projet, on a utilisé le moteur de jeu <a href="https://unity.com/fr">Unity</a>.<br>
-                        On a utilisé <a href="https://github.com/">GitHub</a> pour le dépôt.
-                    </p>
-                    <h4>Photos</h4>
-                    <img class="photos" src="photos/VampireSurvivor1.png" alt="Photo Vampire Survivor">
-                    <img class="photos" src="photos/VampireSurvivor2.png" alt="Photo Vampire Survivor">
-                    <img class="photos" src="photos/VampireSurvivor3.png" alt="Photo Vampire Survivor">
-                    <img class="photos" src="photos/VampireSurvivor4.png" alt="Photo Vampire Survivor">
-                    <h4>Liens</h4>
-                    <ul>
-                        <li><a href="https://unity.com/fr">Unity</a></li>
-                        <li><a href="https://github.com/">GitHub</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="section">
-                <h2>Expériences professionnelles</h2>
-                <div class="project">
-                    <h3>EvoTech</h3>
-                    <h4>Description</h4>
-                    <p>
-                        Durant mon stage dans l'entreprise <a href="https://www.gimel.fr/">Gimel Lavergne</a> du 15 mai 2023 au 28 juillet 2023, j'ai eu comme tache d'ajouter une fonctionnalité sur une de leurs applications déjà existantes EvoTech.<br>
-                        Cette fonctionnalité a pour but de permettre à un professionnel qui part en rendez-vous chez un client, d'ajouter au rendez-vous des ajouter des articles qu'il prend avec lui dans sa camionnette, et de pouvoir facturer le client ainsi que de retirer les articles du stock à la fin de la visite s'il les a utilisés.
-                    </p>
-                    <h4>Taches</h4>
-                    <p>
-                        Mes taches pour cette fonctionnalité sont:
-                        <ul>
-                            <li>Base de données locale</li>
-                            <li>Développement de toute la fonctionnalité</li>
-                        </ul>
-                    </p>
-                    <h4>Techonologies</h4>
-                    <p>
-                        Toutes les applications chez <a href="https://www.gimel.fr/">Gimel Lavergne</a> sont développées à l'aide du framwork <a href="https://learn.microsoft.com/fr-fr/previous-versions/xamarin/get-started/what-is-xamarin">Xamarin</a>.
-                    </p>
-                    <h4>Liens</h4>
-                    <ul>
-                        <li><a href="https://learn.microsoft.com/fr-fr/previous-versions/xamarin/get-started/what-is-xamarin">Xamarin</a></li>
-                        <li><a href="https://www.gimel.fr/">Gimel Lavergne</a></li>
-                    </ul>
-                </div>
-                <div class="project">
-                    <h3>EvoStock</h3>
-                    <h4>Description</h4>
-                    <p>
-                        Durant mon alternance dans l'entreprise <a href="https://www.gimel.fr/">Gimel Lavergne</a> du 1er septembre 2023 jusqu'à maintenant, j'ai comme tache de développer 2 grandes parties de l'applciation EvoStock.<br>
-                        Mes parties ont comme objectifs de permettre à un magasinier de traiter la réception d'une ou plusieurs commandes fournisseurs et de générer l'entrée fournisseur directement depuis l'application. Le magasinier peut aussi déclarer des anomalis/litiges si le cas se présente. L'autre partie permet de générer le retour fournisseur suite aux litiges déclarés depuis la réception.
-                    </p>
-                    <h4>Taches</h4>
-                    <p>
-                        Mes taches pour cette fonctionnalité sont:
-                        <ul>
-                            <li>Cahier des charges</li>
-                            <li>Maquettes</li>
-                            <li>Base de données locale</li>
-                            <li>Développement de toute la partie réception</li>
-                            <li>Développement de toute la partie retour fournisseur</li>
-                            <li>Développement du métier pour la gestion des litiges</li>
-                        </ul>
-                    </p>
-                    <h4>Techonologies</h4>
-                    <p>
-                        Toutes les applications chez <a href="https://www.gimel.fr/">Gimel Lavergne</a> sont développées à l'aide du framwork <a href="https://learn.microsoft.com/fr-fr/previous-versions/xamarin/get-started/what-is-xamarin">Xamarin</a>.<br>
-                        Concernant la partie métier, elle est développée en .Net <a href="https://learn.microsoft.com/fr-fr/dotnet/desktop/wpf/overview/?view=netdesktop-8.0">WPF</a> (C# et XAML aussi).
-                    </p>
-                    <h4>Liens</h4>
-                    <ul>
-                        <li><a href="https://learn.microsoft.com/fr-fr/previous-versions/xamarin/get-started/what-is-xamarin">Xamarin</a></li>
-                        <li><a href="https://learn.microsoft.com/fr-fr/dotnet/desktop/wpf/overview/?view=netdesktop-8.0">WPF</a></li>
-                        <li><a href="https://www.gimel.fr/">Gimel Lavergne</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="section">
-                <h2>Projets Personnels</h2>
-                <div class="project">
-                    <h3>Jeu vidéo</h3>
-                    <h4>Descritpion</h4>
-                    <p>
-                        Du côté personnel, j'ai qu'un seul projet en cours car il me prend énormément de mon temps au vu de son temps de développement assez conséquent. En effet, ayant comme objectif avec un ami d'enfance de monter notre entreprise de jeu vidéo dans quelques années, j'ai commencé à développer le premier jeu qui sera commercialisé par cette futur entreprise.<br>
-                        Pour des raisons de concurrence, je ne peux pas parler en détail de son contenu, mais il est comme une sorte de remake du jeu <a href="https://www.nintendo.com/fr-fr/Jeux/Jeux-a-telecharger-sur-Nintendo-3DS/Steel-Diver-Sub-Wars-851885.html">Steel Diver: Sub Wars</a> sorti en février 2014 par <a href="https://www.nintendo.com/fr-fr/">Nintendo</a> sur les consoles de la famille <a href="https://www.nintendo.com/fr-fr/Hardware/Gamme-Nintendo-3DS/Famille-Nintendo-3DS-94560.html">Nintendo 3DS</a> à l'excéption de la partie mission qui ne sera pas présent dans le jeu. Contrairement au jeu orignel, celui-ci se jouera sur ordinateur (pour l'instant compatible Windows seulement).
-                    </p>
-                    <h4>Taches</h4>
-                    <p>
-                        Étant seul pour l'instant à développer ce jeu, j'effectue des taches très variée dans le développement du jeu comme:
-                        <ul>
-                            <li>Cahier des charges</li>
-                            <li>Maquettes</li>
-                            <li>Développement back-end</li>
-                            <li>UI</li>
-                            <li>Modèle 3D</li>
-                            <li>Début de la traduction</li>
-                            <li>Base de données</li>
-                        </ul>
-                    </p>
-                    <h4>Techonologies</h4>
-                    <p>
-                        Pour ce projet, j'utilise le moteur de jeu <a href="https://unity.com/fr">Unity</a>.<br>
-                        La base de données est une base de données <a href="https://www.sqlite.org/">SQLite</a>.<br>
-                        Le serveur sera fait à l'aide de <a href="https://nodejs.org/en/">NodeJs</a>.<br>
-                        Enfin, le serveur sera contenairisé dans un conteneur <a href="https://www.docker.com/">Docker</a> pour plus d'isolation avec le reste de la machine.<br>
-                        J'utilise aussi <a href="https://github.com/">GitHub</a> pour le dépôt.
-                    </p>
-                    <h4>Liens</h4>
-                    <li><a href="https://nodejs.org/en/">NodeJs</a></li>
-                    <li><a href="https://unity.com/fr">Unity</a></li>
-                    <li><a href="https://www.sqlite.org/">SQLite</a></li>
-                    <li><a href="https://www.docker.com/">Docker</a></li>
-                    <li><a href="https://github.com/">GitHub</a></li>
-                </div>
-            </div>
-            <div class="section">
-                <h2 id="autres-projets">Autres Projets Personnels</h2>
-                <p>
-                    Dans cette partie, je vais parler de mes projets en cours qui ne sont pas en lien avec le développement informatique.
-                </p>
-                <div class="project">
-                    <h3>Null Island map</h3>
-                    <h4>Description</h4>
-                    <p>
-                        Ayant beaucoup joué à <a href="https://eurotrucksimulator2.com/">Euro Truck Simulator 2</a>, un jeu de simulation de conduite de poids lourds, ce jeu permet aussi de créer nos propres mondes en les modélisants. C'est ce que j'ai commencé à faire depuis plus d'un an maintenant en créant mon propre monde virtuel à l'échelle réelle basé dans l'espris français en ayant comme but d'être la plus grande possible.<br>
-                        Modéliser ce monde demande énormément de temps aisin que beaucoup de créativité, ce qui est un de mes défauts, qui me le fait donc travailler.<br>
-                        A ce jour, je n'ai pas encore assez modélisé de villes/villages pour être suffisant pour sortir une première version de ce mod.
-                    </p>
-                </div>
-                <div class="project">
-                    <h3>Musique</h3>
-                    <h4>Description</h4>
-                    <p>
-                        Depuis quelques mois, j'ai commencé à faire de la MAO (Musique Assistée par Ordinateur). Cela conssite à partir d'un logiciel de montage audio, de créer des musiques à l'aide de bruitages assemblés les uns avec les autres.<br>
-                        Pour créer mes musiques, je me sers du logiciel <a href="https://www.reaper.fm/">Reaper</a> pour les différentes pistes et <a href="https://vital.audio/">Vital</a> pour les bruitages.
-                        Ayant commencé depuis peu, je n'ai pas encore publié de musique. Mais une fois finie mes musiques seront publiées <a href="https://www.youtube.com/channel/UCZIvMO5kmJNqdHv2e8ZjSOg">ici</a>. 
-                    </p>
-                    <h4>Liens</h4>
-                    <ul>
-                        <li><a href="https://www.youtube.com/channel/UCZIvMO5kmJNqdHv2e8ZjSOg">Chaine Youtube</a></li>
-                        <li><a href="https://www.reaper.fm/">Reaper</a></li>
-                        <li><a href="https://vital.audio/">Vital</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - BARBER Maxime</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">BARBER Maxime</div>
+    <div>
+      <a href="#home">Accueil</a>
+      <a href="#about">À propos</a>
+      <a href="#skills">Compétences</a>
+      <a href="#projects">Projets</a>
+      <a href="#experiences">Expériences</a>
+      <a href="#formations">Formations</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <h1>Bonjour, je suis <span>BARBER Maxime</span></h1>
+    <p>Développeur informatique spécialisé en développement mobile ainsi qu'à la technologie .Net</p>
+    <p>Titulaire du BUT Informatique avec option développement mobile et multimédia, je passe une grande partie de mon temps libre à développer diverses applications (cross-plateforme, jeux vidéo), mais aussi à la modélisation d'un monde virtuel et de la création musicale.</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>À propos</h2>
+    <p>
+      Mon BUT m'a permis d'acquérir des connaissances et des compétences en développement informatique. Je développe divers projets pour continuer à performer et enrichir mes compétences de développeur. Actuellement, mes projets tournent autour de 2 grandes catégories: les jeux vidéo et des applications plus variées faisant appel à de l'IA. Mon objectif à long terme est d'avoir ma propre entreprise d'édition de logiciel, ainsi qu'une entreprise en préparation automobile (esthétique et mécanique).
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Compétences</h2>
+    <h3>Langages</h3>
+    <div class="skills-container">
+      <div class="skill">C#</div>
+      <div class="skill">XAML</div>
+      <div class="skill">Kotlin</div>
+      <div class="skill">C++</div>
+      <div class="skill">Java</div>
+      <div class="skill">SQL</div>
+      <div class="skill">NoSQL</div>
+    </div>
+    <h3>Technologies</h3>
+    <div class="skills-container">
+      <div class="skill">MAUI</div>
+      <div class="skill">Xamarin</div>
+      <div class="skill">Unity</div>
+      <div class="skill">ASP .Net</div>
+      <div class="skill">SQLite</div>
+      <div class="skill">MongoDB</div>
+      <div class="skill">Github</div>
+    </div>
+    <h3>Logiciels</h3>
+    <div class="skills-container">
+      <div class="skill">Visual Studio 2022</div>
+      <div class="skill">Visual Studio Code</div>
+      <div class="skill">Android Studio</div>
+      <div class="skill">Arduino IDE</div>
+      <div class="skill">MongoDB Compass</div>
+      <div class="skill">Github Desktop</div>
+      <div class="skill">Git Extensions</div>
+      <div class="skill">Figma</div>
+      <div class="skill">Draw io</div>
+    </div>
+    <h3>Soft skills</h3>
+    <div class="skills-container">
+      <div class="skill">Travail en équipe</div>
+      <div class="skill">Autonomie</div>
+      <div class="skill">Curieux</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projets</h2>
+    <h3>Applications</h3>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="image-projet.jpg" alt="Projet 1">
+        <h3>Logiciel de gestion pour tous</h3>
+        <p>Ce projet a pour but de rendre les logiciels de gestion accessible à toutes les entreprises quel que soit leur taille et leur budget. Ce logiciel est donc conçu pour limiter au maximum les coûts ainsi que d'avoir le meilleur gain de temps possible.</p>
+        <button class="project-btn" data-modal="modal-projet-1">
+          Voir le projet
+        </button>
+      </div>
+
+      <dialog id="modal-projet-1" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Logiciel de gestion pour tous</h2>
+        <p>Le but de ce projet est que chaque entreprise est son logiciel de gestion parfaitement adapté à ses besoins (ERP, WMS, CRM, ...), son fonctionnement, tout en restant abordable. Ce logiciel est capable de s'adapter à tout type d'entreprises, qu'elle soit dans l'alimentaire, le bâtiment, l'automobile, ..., que ce soit la petite entreprise ou le grand groupe international. Ce logiciel sera disponible à la fois sur Windows, Linux, MACOS, web et android / IOS pour une utilisation sur tablette.</br>
+          Comme ce projet a une grande probabilité d'être commercialisé une fois terminé, je ne peux pas en détailler davantage sur son fonctionnement pour garantir son rôle.
+        </p>
+        <h3>Technologies</h3>
+        <ul>
+          <li>.Net (MAUI, ASP.Net)</li>
+          <li>SQL (SQLite)</li>
+          <li>NoSQL (MongoDB)</li>
+        </ul>
+        <h3>Logiciels</h3>
+        <ul>
+          <li>Visual Studio 2022</li>
+          <li>Visual Studio Code</li>
+          <li>SQLite Database Browser</li>
+          <li>MongoDB Compass</li>
+          <li>Github Desktop</li>
+          <li>Draw io</li>
+          <li>Figma</li>
+          <li>Proxmox</li>
+        </ul>
+        <h3>Statut</h3>
+        <p>Cahier des charges</p>
+        <h3>Galerie photos</h3>
+        <p>À venir.</p>
+    </dialog>
+
+      <div class="project-card">
+        <img src="image-projet.jpg" alt="Projet 2">
+        <h3>3D Generator</h3>
+        <p>Prendre des photos depuis son smartphone d'un objet, d'une pièce, d'un lieu, et de transformer ces photos en un modèle 3D visible depuis une application PC, ce sera possible grâce à ce projet utilisant la méthode du Gaussian-Splatting.</p>
+        <button class="project-btn" data-modal="modal-projet-2">
+          Voir le projet
+        </button>
+      </div>
+    </div>
+
+    <dialog id="modal-projet-2" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>3D Generator</h2>
+        <p>En troisième année de BUT informatique, j'ai pris connaissance de la méthode du Gaussian-Splatting, une méthode qui permet de générer un modèle 3D à partir de photos. Actuellement pour lancer la génération, il faut mettre les photos dans un dossier sur son ordinateur et lancer la commande dans un terminal avec le chemin d'accès des photos ce qui n'est pas très familier pour le grand public. De plus, il est de plus en plus naturel de prendre des photos directement depuis son smartphone sans pour autant les ajouter sur son ordinateur. C'est pourquoi je veux mettre au point une solution accessible à tous pour pouvoir utiliser cette méthode. Le projet se divise en 3 grandes parties. La première est une application mobile (android / IOS) où l'utilisateur va pouvoir créer ses projets et y ajouter toutes les photos prises avec son smartphone. La deuxième partie est un serveur qui va s'occuper de générer le modèle 3D une fois qu'il a reçu les informations du projet avec les photos depuis l'application mobile. Enfin, lorsque la génération est terminée, le résultat pourra être visible à l'aide d'une application Unity avec possibilité d'explorer avec un casque de réalité virtuelle.
+        </p>
+        <h3>Technologies</h3>
+        <ul>
+          <li>.Net (MAUI, ASP.Net, Unity)</li>
+          <li>SQL (SQLite)</li>
+        </ul>
+        <h3>Logiciels</h3>
+        <ul>
+          <li>Visual Studio 2022</li>
+          <li>Visual Studio Code</li>
+          <li>Unity</li>
+          <li>SQLite Database Browser</li>
+          <li>Github Desktop</li>
+          <li>Draw io</li>
+          <li>Figma</li>
+        </ul>
+        <h3>Statut</h3>
+        <p>Développement de l'application mobile</p>
+        <h3>Galerie photos</h3>
+        <p>À venir.</p>
+    </dialog>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="image-projet.jpg" alt="Projet 3">
+        <h3>Forza Help App</h3>
+        <p>Cette application va permettre de stocker tous les réglages de ses voitures (pas de limite de quantité) ainsi que tous les chronos pour chaque circuit et pour chaque réglage. Il y a aussi une partie classement pour pouvoir comparer chaque voiture selon un critère donné.</p>
+        <button class="project-btn" data-modal="modal-projet-3">
+          Voir le projet
+        </button>
+      </div>
+
+      <dialog id="modal-projet-3" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Froza Help App</h2>
+        <p>Cette application a plusieurs objectifs. Le premier est de permettre aux joueurs du jeu Forza Motorsport d'y ajouter tous ses réglages (ce qui n'est pas possible dans le jeu lui-même: la limite de sauvegarde du nombre de réglages est inférieure au nombre de voitures présentes). Ainsi, chaque joueur va pouvoir y ajouter pleins de réglages, y compris pour un même modèle (course, drift, drag, ...). L'application dispose aussi d'une partie circuit pour pouvoir sauvegarder chaque chrono de chaque réglage et ainsi pour établir un classement selon le critère choisi.
+        </p>
+        <h3>Technologies</h3>
+        <ul>
+          <li>.Net (MAUI)</li>
+          <li>SQL (SQLite)</li>
+        </ul>
+        <h3>Logiciels</h3>
+        <ul>
+          <li>Visual Studio 2022</li>
+          <li>Visual Studio Code</li>
+          <li>SQLite Database Browser</li>
+          <li>Github Desktop</li>
+          <li>Draw io</li>
+          <li>Figma</li>
+        </ul>
+        <h3>Statut</h3>
+        <p>Développement</p>
+        <h3>Galerie photos</h3>
+        <p>À venir.</p>
+    </dialog>
+
+      <div class="project-card">
+        <img src="image-projet.jpg" alt="Projet 4">
+        <h3>Meet people</h3>
+        <p>Cette application permet de faire des nouvelles rencontres que ce soit dans un but amical et / ou amoureux avec un algorithme répondant au mieux aux demandes de chacun.</p>
+        <button class="project-btn" data-modal="modal-projet-4">
+          Voir le projet
+        </button>
+      </div>
+    </div>
+
+    <dialog id="modal-projet-4" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Meet People</h2>
+        <p>Voyant l'algorithme des réseaux sociaux existants ne pas être adaptés pour répondre au mieux la demande des utilisateurs, j'ai décidé de faire ma propre application pour rencontrer des nouvelles personnes. Ici, l'algorithme n'est pas fait pour que l'utilisateur reste le plus longtemps possible sur l'application, mais de répondre au mieux les demandes de chacun. C'est pour cela que l'application est divisée en 2 parties: une partie rencontre amicale et une partie rencontre amoureuse. Pour chacune des parties, l'utilisateur peut renseigner ses critères obligatoires et secondaires qu'il veut retrouver ou à l'inverse, ne pas retrouver afin d'obtenir en suggestion uniquement des profils qui l'intéresse. Cette méthode ne peut fonctionner uniquement si les utilisateurs jouent le jeu et rentrent de façon honnête leur description. Comme il est possible de ne pas vouloir exposer certains critères de soi, il est possible de choisir pour chaque critère s'il est visible ou non. Dans le cas non visible, seul l'algorithme le prendra en compte pour respecter les critères de recherches des autres utilisateurs.
+        </p>
+        <h3>Technologies</h3>
+        <ul>
+          <li>.Net (MAUI, ASP .Net)</li>
+          <li>SQL (SQLite)</li>
+          <li>NoSQL (MongoDB)</li>
+        </ul>
+        <h3>Logiciels</h3>
+        <ul>
+          <li>Visual Studio 2022</li>
+          <li>Visual Studio Code</li>
+          <li>SQLite Database Browser</li>
+          <li>MongoDB Compass</li>
+          <li>Github Desktop</li>
+          <li>Draw io</li>
+          <li>Figma</li>
+        </ul>
+        <h3>Statut</h3>
+        <p>Développement</p>
+        <h3>Galerie photos</h3>
+        <p>À venir.</p>
+    </dialog>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="image-projet.jpg" alt="Projet 5">
+        <h3>Fusionner 2 jeux vidéo</h3>
+        <p>Cette application automatise la transformation du contenu du jeu American Truck Simulator en un mod utilisable pour le jeu Euro Truck Simulator 2 et inversement.</p>
+        <button class="project-btn" data-modal="modal-projet-5">
+          Voir le projet
+        </button>
+      </div>
+
+      <dialog id="modal-projet-5" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Fusionner 2 jeux vidéo</h2>
+        <p>SCS Software, studio tchèque de jeux vidéo a 2 produits fars: Euro Truck Simulator 2 et American Truck Simulator. Ce sont 2 jeux de simulation de conduite de camions (bientôt aussi de voitures et bus de tourisme), l'un se passant en Europe et l'autre en Amérique du Nord. Ces 2 jeux ont des points de similitudes: mêmes menus, même moteur de jeux, une archive de presque 10Go comportant des modèles 3D utilisée par les 2 jeux. Un autre point fort de ces jeux est la possibilité de créer ses propres mods (map, camion, ...). Sur le papier, on peut donc penser qu'on peut importer un jeu dans l'autre sous forme de mods. En pratique, la tâche est malheureusement plus complexe, mais pas impossible. Reprendre le contenu d'un jeu tel quel et le mettre sous forme de mod dans l'autre causerait à la fois des doublons de contenus, mais aussi des petits bugs visuels. Quand on compare le contenu des 2 jeux, on s'aperçoit qu'on retrouve du contenu portant le même nom, mais avec un chemin d'accès différent (= duplication de contenu), et du contenu différent portant le même nom stocké au même endroit (le contenu ajouté en mod va écraser l'autre contenu). Pour rendre compatible les 2 jeux, il faut donc corriger tous ces problèmes, ce qui est extrêmement long (il y a par exemple une dizaine de fichiers textes à analyser avec pour certains dépassant les centaines de milliers de lignes). Le but de ce projet est donc de créer une application console pour automatiser ce processus. L'application va fusionner les fichiers textes en évitant les doublons et les pertes de données, détecter les contenus doublons, et modifier le nom des contenus qui diffèrent d'un jeu à l'autre.
+        </p>
+        <h3>Technologies</h3>
+        <ul>
+          <li>C++</li>
+        </ul>
+        <h3>Logiciels</h3>
+        <ul>
+          <li>Visual Studio 2022</li>
+          <li>Visual Studio Code</li>
+          <li>Github Desktop</li>
+          <li>Draw io</li>
+        </ul>
+        <h3>Statut</h3>
+        <p>Cahier des charges</p>
+        <h3>Galerie photos</h3>
+        <p>À venir.</p>
+    </dialog>
+
+      <div class="project-card">
+        <img src="image-projet.jpg" alt="Projet 6">
+        <h3>Générateur de map</h3>
+        <p>Cette application génère un map réaliste compatible pour le jeu Euro Truck Simulator 2 avec un climat donné.</p>
+        <button class="project-btn" data-modal="modal-projet-6">
+          Voir le projet
+        </button>
+      </div>
+    </div>
+
+    <dialog id="modal-projet-6" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Générateur de map</h2>
+        <p>Comme énoncé dans le projet précédent (Fusionner 2 jeux vidéo), SCS Software rend possible la création de mods sur leurs jeux, et notamment la création de nouvelles maps. C'est dans quoi je me suis lancé depuis quelques années (voir projet Mapping). Je me suis vite rendu compte que créer une map est quelque chose de très long à faire quand on est seul et qu'on a d'autres activités à côté. C'est pourquoi j'ai eu l'idée de créer une IA qui serait capable d'effectuer ce travail de mapping à ma place en respectant certains critères (style de routes d'un pays, climat, paysages).
+        </p>
+        <h3>Technologies</h3>
+        <ul>
+          <li>Python</li>
+          <li>SQL (SQLite)</li>
+        </ul>
+        <h3>Logiciels</h3>
+        <ul>
+          <li>Visual Studio Code</li>
+          <li>SQLite Database Browser</li>
+          <li>Github Desktop</li>
+          <li>Draw io</li>
+        </ul>
+        <h3>Statut</h3>
+        <p>Cahier des charges</p>
+        <h3>Galerie photos</h3>
+        <p>À venir.</p>
+    </dialog>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="image-projet.jpg" alt="Projet 7">
+        <h3>Tableau de suivi des recherches</h3>
+        <p>En tant que développeur, je ne me suis pas contenté d'un tableur pour suivre mes candidatures. Cette application permet de retrouver toutes les candidatures avec un suivi simple.</p>
+        <button class="project-btn" data-modal="modal-projet-7">
+          Voir le projet
+        </button>
+      </div>
+
+      <dialog id="modal-projet-7" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Tableau de suivi des recherches</h2>
+        <p>Lorsqu'on cherche du travail, toutes personnes que vous allez rencontrer pour vous aider dans votre recherche vont vous dire de faire un tableau de suivi (avec Excel). En tant que développeur, j'ai préféré faire ma propre application d'une part pour continuer à m'exercer en programmation, et d'autre part pour avoir plus de fonctionnalités. Mon application ne résume pas uniquement la liste des offres auxquelles on a candidaté, on peut aussi filtrer et trier cette recherche pour mieux s'y retrouver. Pour chaque candidature, on retrouve la date de candidature, si c'est à partir d'une offre ou en spontané, le statut actuel et le type de contrat souhaiter. On peut aussi y renseigner les relances qu'on fait. Côté entreprise, on peut y renseigner toutes ses adresses, avec les différentes adresses mails et numéros de téléphone. 
+        </p>
+        <h3>Technologies</h3>
+        <ul>
+          <li>.Net (MAUI)</li>
+          <li>SQL (SQLite)</li>
+        </ul>
+        <h3>Logiciels</h3>
+        <ul>
+          <li>Visual Studio 2022</li>
+          <li>Visual Studio Code</li>
+          <li>SQLite Database Browser</li>
+          <li>Github Desktop</li>
+          <li>Draw io</li>
+          <li>Figma</li>
+        </ul>
+        <h3>Statut</h3>
+        <p>Version alpha. À noter que le code sera rendu public une fois que l'application sera passée au-delà de la version beta.</p>
+        <h3>Galerie photos</h3>
+        <p>À venir.</p>
+    </dialog>
+
+      <div class="project-card">
+        <img src="image-projet.jpg" alt="Projet 8">
+        <h3>Univers viewer</h3>
+        <p>Cette application permet de se déplacer dans l'espace (possibilité en casque VR) à travers tout l'univers pour voir les différents objets qui le composent.</p>
+        <button class="project-btn" data-modal="modal-projet-8">
+          Voir le projet
+        </button>
+      </div>
+    </div>
+
+    <dialog id="modal-projet-8" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Univers viewer</h2>
+        <p>Ayant un grand intérêt pour l'espace, j'ai été déçu d'apprendre qu'actuellement, il n'existe pas de simulateur complet permettant de se déplacer à travers l'univers connu pour en découvrir tous les éléments qui le compose. Je fais donc ce projet pour rendre ceci possible. L'utilisateur ne pourra pas uniquement se déplacement dans le système solaire, mais se déplacer à travers tous l'univers connu. Idéalement, le projet sera compatible avec l'utilisation d'un casque de réalité virtuelle.
+        </p>
+        <h3>Technologies</h3>
+        <ul>
+          <li>.Net (Unity)</li>
+          <li>NoSQL (MongoDB)</li>
+        </ul>
+        <h3>Logiciels</h3>
+        <ul>
+          <li>Visual Studio 2022</li>
+          <li>Visual Studio Code</li>
+          <li>Unity</li>
+          <li>MongoDB Compass </li>
+          <li>Github Desktop</li>
+          <li>Draw io</li>
+          <li>Figma</li>
+        </ul>
+        <h3>Statut</h3>
+        <p>Cahier des charges</p>
+        <h3>Galerie photos</h3>
+        <p>À venir.</p>
+    </dialog>
+
+    <h3>Jeux vidéo</h3>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="image-projet.jpg" alt="Projet 1">
+        <h3>Tactic Sub Wars</h3>
+        <p>2 équipes jusqu'à 10 joueurs chacune s'affrontent pour obtenir la victoire et débloquer des sous-marins et membres d'équipage. Pour cela, le joueur dispose de plusieurs armes (différentes torpilles, différentes bombes) et joue contre une IA intelligente.</p>
+        <button class="project-btn" data-modal="modal-projet-9">
+          Voir le projet
+        </button>
+      </div>
+
+      <dialog id="modal-projet-9" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Tactic Sub Wars</h2>
+        <p>À travers ce jeu, vous allez embarquer dans une équipe et piloter un sous-marin pour essayer de survivre et couler la flotte ennemie. Gagner des points vous fait augmenter de niveaux et permet de débloquer des nouveaux sous-marins (il y en a près de 300 !). Chaque victoire vous fait débloquer un membre d'équipage, équipage qui permet d'améliorer les performances du sous-marin. Vous jouerez et affronterez des automates entrainés avec ML Agent ce qui les rend aussi intelligents que de vrais joueurs ce qui vous permettra de jouer quand vous le voulez sans avoir la contrainte d'attendre qu'un autre joueur ait aussi l'envie de jouer. Le jeu disposera aussi d'une boutique pour acheter des sous-marins et des revêtements pour rendre vos sous-marins uniques !</br>
+        Selon le succès du jeu, une version multijoueur compétitive sera ajoutée au jeu. Vous pourrez affronter de vrais joueurs et gagner le plus de points possibles pour augmenter votre classement avant la fin de la saison et obtenir les meilleures récompenses. Il y aura aussi la possibilité de créer un clan afin de réunir les meilleurs et s'entrainer pour combattre ensembre en compétition.
+        </p>
+        <h3>Jeux d'inspiration</h3>
+        <ul>
+          <li>Steel Diver: Sub Wars (3DS)</li>
+        </ul>
+        <h3>Technologies</h3>
+        <ul>
+          <li>.Net (ASP .Net, Unity avec ML Agent)</li>
+          <li>SQL (SQLite)</li>
+          <li>NoSQL (MongoDB)</li>
+        </ul>
+        <h3>Logiciels</h3>
+        <ul>
+          <li>Visual Studio 2022</li>
+          <li>Visual Studio Code</li>
+          <li>Unity</li>
+          <li>SQLite Database Browser</li>
+          <li>MongoDB Compass</li>
+          <li>Github Desktop</li>
+          <li>Draw io</li>
+          <li>Figma</li>
+        </ul>
+        <h3>Statut</h3>
+        <p>Version alpha</p>
+        <h3>Galerie photos</h3>
+        <p>À venir.</p>
+    </dialog>
+
+      <div class="project-card">
+        <img src="image-projet.jpg" alt="Projet 2">
+        <h3>Le trois-trois</h3>
+        <p>Le trois-trois est un jeu de cartes jusqu'à 4 joueurs où chaque joueur dispose de 3 cartes cachés et 3 cartes à découvert devant lui, ainsi que 3 cartes dans les mains. Le premier joueur qui n'a plus de carte a gagné.</p>
+        <button class="project-btn" data-modal="modal-projet-10">
+          Voir le projet
+        </button>
+      </div>
+    </div>   
+
+    <dialog id="modal-projet-10" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Le trois-trois</h2>
+        <p>Le trois-trois est un jeu de cartes jusqu'à 4 joueurs où chaque joueur dispose de 3 cartes cachés et 3 cartes à découvert devant lui, ainsi que 3 cartes dans les mains. Le premier joueur qui n'a plus de carte a gagné. Il faut d'abord se débarrasser de ses cartes dans les mains, puis les cartes visibles devant soi et enfin, celles retournées. Les règles sont assez proches de celles de jeu de carte Le Président. Les cartes vont de 3 (la plus faible) à 10, valet, dame, roi, as, 2 (la plus forte). Contrairement au président, si un joueur pose 2 cartes, le suivant peut en poser le nombre qu'il veut, et si 2 joueurs posent la même carte, le joueur suivant n'est pas obligé de poser la même. Le trois-trois dispose aussi de cartes "à pouvoir":
+        </p>
+        <ul>
+          <li>Sept ou tête: lorsqu'un sept est posé, le joueur suivant ne peut poser que les cartes suivantes: sept, valet, dame et roi</li>
+          <li>Neuf ou moins: lorsqu'un neuf est posé, le joueur suivant doit poser une carte inférieure ou égale au neuf (le deux est accepté)</li>
+          <li>Dix ferme: lorsqu'un dix est posé, on retire toutes les cartes du tas et le joueur qui a posé le dix rejoue</li>
+          <li>Deux rejoue: lorsqu'un deux est posé, le joueur qui l'a posé rejoue</li>
+        </ul>
+        <p>Pour pimenter le jeu, j'ai ajouté un mode démon. Le nombre de joueurs est augmenté à 10. De plus, lorsqu'un joueur fini premier, il se voit retirer une carte masquée et affichée devant lui (il reste au minimum 1 carte masquée et 1 carte retournée) et le joueur qui a perdu se voit avec une carte masquée et une carte affichée en plus (pas de limite !). Le nombre de paquet de 52 cartes utilisés dépend du nombre de cartes nécessaires pour chaque joueur.
+        </p>
+        <h3>Jeux d'inspiration</h3>
+        <ul>
+          <li>Jeu de cartes trois-trois</li>
+        </ul>
+        <h3>Technologies</h3>
+        <ul>
+          <li>.Net (Unity)</li>
+        </ul>
+        <h3>Logiciels</h3>
+        <ul>
+          <li>Visual Studio 2022</li>
+          <li>Visual Studio Code</li>
+          <li>Unity</li>
+          <li>Github Desktop</li>
+          <li>Draw io</li>
+          <li>Figma</li>
+        </ul>
+        <h3>Statut</h3>
+        <p>Version alpha</p>
+        <h3>Galerie photos</h3>
+        <p>À venir.</p>
+    </dialog>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="image-projet.jpg" alt="Projet 3">
+        <h3>Backrooms: Nightmare Restarting</h3>
+        <p>Ce jeu nous fait tomber dans les backrooms en mélangeant ambiance backrooms et lieux réels pouvant laisser un mauvais souvenir (école, hôpital, ...).</p>
+        <button class="project-btn" data-modal="modal-projet-11">
+          Voir le projet
+        </button>
+      </div>
+
+      <dialog id="modal-projet-11" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Backrooms: Nightmare Restarting</h2>
+        <p>Jusqu'à 4 joueurs, vous traversez différents niveaux mélangeant ambiance backrooms et lieux réels pouvant laisser un mauvais souvenir comme une école, un hôpital et bien d'autres ! Vous devez trouver la sortie, résoudre des énigmes et fuir les monstres selon le niveau. Vous trouverez des items à récolter pour vous aider dans votre périple. Certains monstres seront entrainés avec ML Agents pour rendre un comportement plus naturel.
+        </p>
+        <h3>Jeux d'inspiration</h3>
+        <ul>
+          <li>Escape the Backrooms (PC)</li>
+        </ul>
+        <h3>Technologies</h3>
+        <ul>
+          <li>.Net (Unity avec ML Agent)</li>
+          <li>SQL (SQLite)</li>
+        </ul>
+        <h3>Logiciels</h3>
+        <ul>
+          <li>Visual Studio 2022</li>
+          <li>Visual Studio Code</li>
+          <li>Unity</li>
+          <li>SQLite Database Browser</li>
+          <li>Github Desktop</li>
+          <li>Draw io</li>
+          <li>Figma</li>
+        </ul>
+        <h3>Statut</h3>
+        <p>Développement</p>
+        <h3>Galerie photos</h3>
+        <p>À venir.</p>
+    </dialog>
+
+      <div class="project-card">
+        <img src="image-projet.jpg" alt="Projet 4">
+        <h3>World Conqueror</h3>
+        <p>Envie de conquérir l'univers ? Dans World Conqueror, on peut se balader de galaxie en galaxie, de planète en planète et acheter tous ce que vous voulez.</p>
+        <button class="project-btn" data-modal="modal-projet-12">
+          Voir le projet
+        </button>
+      </div>
+    </div>
+
+    <dialog id="modal-projet-12" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>World Conqueror</h2>
+        <p>Vous commencez sur une planète abandonnée avec tout à bâtir. En aménageant la planète, vous pourrez inviter des personnes à venir y habiter. Une fois avoir construit les objets nécessaires, vous pourrez explorer d'autres planètes, d'autres galaxies pour les acheter et recommencer le processus.
+        </p>
+        <h3>Jeux d'inspiration</h3>
+        <ul>
+          <li>Série de jeux Animal Crossing</li>
+          <li>Planete Crafter</li>
+        </ul>
+        <h3>Technologies</h3>
+        <ul>
+          <li>.Net (Unity)</li>
+          <li>SQL (SQLite)</li>
+        </ul>
+        <h3>Logiciels</h3>
+        <ul>
+          <li>Visual Studio 2022</li>
+          <li>Visual Studio Code</li>
+          <li>Unity</li>
+          <li>SQLite Database Browser</li>
+          <li>Github Desktop</li>
+          <li>Draw io</li>
+          <li>Figma</li>
+        </ul>
+        <h3>Statut</h3>
+        <p>Développement</p>
+        <h3>Galerie photos</h3>
+        <p>À venir.</p>
+    </dialog>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="image-projet.jpg" alt="Projet 5">
+        <h3>World Shooter</h3>
+        <p>Vous avez aimé les jeux Luxor ? World Shooter repose sur le même principe à la différence que les niveaux vous font voyager à travers toute la planète.</p>
+        <button class="project-btn" data-modal="modal-projet-13">
+          Voir le projet
+        </button>
+      </div>
+
+      <dialog id="modal-projet-13" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>World Shooter</h2>
+        <p>Résolvez pleins de niveaux reprenant des décors qui vous font voyager à travers toute la planète. Pour résoudre un niveau, il faut détruire toutes les boules de couloirs avant qu'elles n'atteignent la fin du ou des chemins. Pour éliminer des boules, il faut faire succéder au minimum 3 boules de la même couleur.
+        </p>
+        <h3>Jeux d'inspiration</h3>
+        <ul>
+          <li>Série de jeux Luxor (PC)</li>
+        </ul>
+        <h3>Technologies</h3>
+        <ul>
+          <li>.Net (Unity)</li>
+        </ul>
+        <h3>Logiciels</h3>
+        <ul>
+          <li>Visual Studio 2022</li>
+          <li>Visual Studio Code</li>
+          <li>Unity</li>
+          <li>Github Desktop</li>
+          <li>Draw io</li>
+          <li>Figma</li>
+        </ul>
+        <h3>Statut</h3>
+        <p>Développement</p>
+        <h3>Galerie photos</h3>
+        <p>À venir.</p>
+    </dialog>
+
+      <div class="project-card">
+        <img src="image-projet.jpg" alt="Projet 6">
+        <h3>Fight Royal</h3>
+        <p>Un match, deux joueurs. Chaque joueur dispose de 8 personnages à positionner de façon stratégique pour attaquer l'ennemi et lui retirer toute sa vie.</p>
+        <button class="project-btn" data-modal="modal-projet-14">
+          Voir le projet
+        </button>
+      </div>
+    </div>
+
+    <dialog id="modal-projet-14" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Fight Royal</h2>
+        <p>Un match, deux joueurs. Chaque joueur dispose de 8 personnages à positionner de façon stratégique pour attaquer l'ennemi et lui retirer toute sa vie. Avec l'argent obtenue, vous pouvez améliorer le niveau de vos cartes et ainsi faire davantage de dégâts. Vous affrontez des automates entrainés avec ML Agent ce qui va vous rendre la victoire difficile !
+        </p>
+        <h3>Jeux d'inspiration</h3>
+        <ul>
+          <li>Clash Royale (mobile)</li>
+        </ul>
+        <h3>Technologies</h3>
+        <ul>
+          <li>.Net (Unity avec ML Agent)</li>
+          <li>SQL (SQLite)</li>
+        </ul>
+        <h3>Logiciels</h3>
+        <ul>
+          <li>Visual Studio 2022</li>
+          <li>Visual Studio Code</li>
+          <li>Unity</li>
+          <li>SQLite Database Browser</li>
+          <li>Github Desktop</li>
+          <li>Draw io</li>
+          <li>Figma</li>
+        </ul>
+        <h3>Statut</h3>
+        <p>Développement</p>
+        <h3>Galerie photos</h3>
+        <p>À venir.</p>
+    </dialog>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="image-projet.jpg" alt="Projet 7">
+        <h3>Tactical Unit</h3>
+        <p>Une équipe en attaque, l'autre en défense. L'équipe attaquante doit poser une bombe dans les endroits indiqués et la faire exploser. Le round s'arrête lorsque toutes les personnes d'une même équipe n'ont plus de vie, lorsque la bombe a explosé ou a été neutralisé. La partie s'arrête au bout de 10 rounds gagnés.</p>
+        <button class="project-btn" data-modal="modal-projet-15">
+          Voir le projet
+        </button>
+      </div>
+    </div>
+
+    <dialog id="modal-projet-15" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Tactical Unit</h2>
+        <p>Une équipe en attaque, l'autre en défense. L'équipe attaquante doit poser une bombe dans les endroits indiqués et la faire exploser. Le round s'arrête lorsque toutes les personnes d'une même équipe n'ont plus de vie, lorsque la bombe a explosé ou a été neutralisé. La partie s'arrête au bout de 10 rounds gagnés. Vous avez à votre disposition plusieurs armes (lourdes, légères et mêlées) ainsi que des grenades. L'idée est de reproduire le jeu Black Squad en remplacent le multijouer par des automates intelligents entrainés avec ML Agent pour pouvoir continuer à jouer à un jeu similaire malgré son déclin.
+        </p>
+        <h3>Jeux d'inspiration</h3>
+        <ul>
+          <li>Black Squad (PC)</li>
+          <li>Counter Strike 2 (PC)</li>
+        </ul>
+        <h3>Technologies</h3>
+        <ul>
+          <li>.Net (Unity avec ML Agent)</li>
+          <li>SQL (SQLite)</li>
+        </ul>
+        <h3>Logiciels</h3>
+        <ul>
+          <li>Visual Studio 2022</li>
+          <li>Visual Studio Code</li>
+          <li>Unity</li>
+          <li>SQLite Database Browser</li>
+          <li>Github Desktop</li>
+          <li>Draw io</li>
+          <li>Figma</li>
+        </ul>
+        <h3>Statut</h3>
+        <p>Développement</p>
+        <h3>Galerie photos</h3>
+        <p>À venir.</p>
+    </dialog>
+
+    <h3>En dehors du développement informatique</h3>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="image-projet.jpg" alt="Projet 1">
+        <h3>Mapping</h3>
+        <p>Depuis quelques années, j'ai commencé à créer ma propre map pour le jeu Euro Truck Simulator 2. Le but: pouvoir faire des trajets de plusieurs milliers de kilomètres à l'échelle réelle à travers toute la diversité de paysage que regorge notre planète.</p>
+        <button class="project-btn" data-modal="modal-projet-16">
+          Voir le projet
+        </button>
+      </div>
+
+      <dialog id="modal-projet-16" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Mapping</h2>
+        <p>Depuis quelques années, j'ai commencé à créer ma propre map pour le jeu Euro Truck Simulator 2. Le but: pouvoir faire des trajets de plusieurs milliers de kilomètres à l'échelle réelle à travers toute la diversité de paysage que regorge notre planète. Cependant, le mapping est extrêmement long et je ne peux pas y consacrer le temps nécessaire à sa réalisation, c'est pourquoi j'ai pensé à faire une IA pour effectuer ce travail de mapping (voir projet Générateur de map).
+        </p>
+        <h3>Gallerie photos</h3>
+        <p>À venir.</p>
+    </dialog>
+
+      <div class="project-card">
+        <img src="image-projet.jpg" alt="Projet 2">
+        <h3>Création musicale</h3>
+        <p>Depuis maintenant plus de 2 ans, j'ai commencé à faire de la MAO (Musique Assistée par Ordinateur) afin de créer intégralement des musiques.</p>
+        <button class="project-btn" data-modal="modal-projet-17">
+          Voir le projet
+        </button>
+      </div>
+    </div> 
+
+    <dialog id="modal-projet-17" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Création musicale</h2>
+        <p>Depuis maintenant plus de 2 ans, j'ai commencé à faire de la MAO (Musique Assistée par Ordinateur) afin de créer intégralement des musiques. Pour créer les effets, j'utilise l'application Vital et pour concevoir la musique, j'utilise Reaper.
+        </p>
+        <h3>Galerie photos</h3>
+        <p>À venir.</p>
+    </dialog>
+  </section>
+
+  <section id="experiences">
+    <h2>Expériences</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <h3>Préparateur de commandes</h3>
+        <p>Veepee (intérim avec Adecco Onsite Veepee) Saint-Vulbas / mi novembre 2025 - mi décembre 2025</p>
+        <p><ul>
+          <li>Réception de la marchandise fournisseur</li>
+          <li>Vérification de conformité (visuel, état du produit, dimensions, quantité)</li>
+          <li>Regroupement puis envoie des produits selon le service qui va traiter les commandes clients</li>
+          <li>Manipulation de marchandise parfois fragile et/ou lourde</li>
+        </ul></br>
+
+        En tant que développeur, cette expérience me permet à nouveau d'enrichir mon regard côté utilisateur, de connaitre les envies des utilisateurs réguliers (personnes en CDI) ce qui va améliorer ma réflexion lors de développement sur des projets avec des clients similaires.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Préparateur de commandes</h3>
+        <p>GXO (intérim avec Crit) Saint-Vulbas / juillet 2025 - octobre 2025</p>
+        <p><ul>
+          <li>Mise en palette des commandes client</li>
+          <li>Pesée, filmage étiquetage des commandes terminées</li>
+          <li>Emballage pour les petites commandes</li>
+          <li>Regroupement sur palette des cartons selon leur destination</li>
+          <li>Manipulation de produits médicaux (fragiles)</li>
+        </ul></br>
+
+          En tant que développeur, cette expérience m'a permis d'enrichir mon regard sur ce type d'application sur le plan utilisateur ce qui va améliorer ma réflexion pour les développements sur des projets pour des clients similaires.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Développeur mobile en alternance</h3>
+        <p>Gimel Lavergne Beynost / septembre 2023 - septembre 2024</p>
+        <p>Développement en <strong>Xamarin</strong> de 2 fonctionnalités (réception et retour fournisseur) pour une nouvelle application. Pour ce faire, j'ai dû établir un cahier des charges avec maquette, puis avec l'accord des chefs de projet et chefs d'équipe, j'ai effectué le développement.</br></br>
+          <ul>
+            <li>partie réception: le magasinier saisie les commandes fournisseur qu'il veut traiter, scanne les articles et entre les quantités pour chaque article. Si besoin, l'utilisateur peut déclarer des litiges (articles en trop, manquants, endommagés). Une fois le traitement des articles terminé, la réception est envoyée dans l'ERP pour être créée.</li>
+            <li>partie retour fournisseur: l'utilisateur crée un retour fournisseur à partir des litiges déclarés dans la partie réception. Une fois finie, le retour est créé dans l'ERP.</li>
+          </ul></br>
+          Logiciels utilisés:
+          <ul>
+            <li>Visual Studio 2022</li>
+            <li>Visual Studio Code</li>
+            <li>Git Extensions</li>
+            <li>Figma</li>
+            <li>Draw io</li>
+          </ul></p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Préparateur de commandes</h3>
+        <p>MR Logistique (intérim avec Triangle) Saint-Vulbas / août 2023</p>
+        <p><ul>
+          <li>Préparation des commandes</li>
+          <li>Mise en palette des commandes terminées</li>
+        </ul></p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Développeur mobile en stage</h3>
+        <p>Gimel Lavergne Beynost / mai 2023 - juillet 2023</p>
+        <p>Développement en <strong>Xamarin</strong> d'une fonctionnalité pour une application déjà existante. L'application permet à l'utilisateur de gérer ses rendez-vous. Ma mission a été de permettre à l'utilisateur de pouvoir ajouter un rendez-vous des articles qu'il emporte dans son véhicule, et de les facturer sur place au client s'il en fait usage.</br></br>
+          Logiciels utilisés:
+        <ul>
+          <li>Visual Studio 2022</li>
+          <li>Visual Studio Code</li>
+          <li>Git Extensions</li>
+        </ul></p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Manutentionnaire</h3>
+        <p>MR Logistique (intérim avec Triangle) Saint-Vulbas / juillet 2022 - août 2022</p>
+        <p><ul>
+          <li>Inventaire en équipe et en autonomie</li>
+          <li>Mise en palette des cartons</li>
+          <li>Filmage de palettes terminées</li>
+        </ul></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="formations">
+    <h2>Formations</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <h3>BUT Informatique</h3>
+        <p>IUT Lyon1 site de Bourg-en-Bresse / 2021-2024</p>
+        <p>BUT Informatique avec spécialisation en troisième année Développement mobile et multimédia.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>BACCALAURÉAT général</h3>
+        <p>Lycée de la Plaine de l'Ain Ambérieu en Bugey / 2021</p>
+        <p>Baccalauréat général avec comme spécialités: Maths, NSI (Numérique et Sciences Informatiques) et SI (Sciences de l'Ingénieur).</p>
+      </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+
+    <p>Un poste à me proposer ? N'hésitez pas à me contacter à l'adresse suivante: maxime.b0306@mail.com !</p>
+  </section>
+
+  <footer>
+    <p>© 2026 BARBER Maxime - Tous droits réservés</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.project-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const modalId = button.dataset.modal;
+            document.getElementById(modalId).showModal();
+        });
+    });
+
+    document.querySelectorAll('.close-modal').forEach(button => {
+      button.addEventListener('click', () => {
+          button.closest('dialog').close();
+      });
+    });
+
+    document.querySelectorAll('dialog').forEach(dialog => {
+      dialog.addEventListener('click', (e) => {
+          const rect = dialog.getBoundingClientRect();
+
+          const clickedInDialog =
+              rect.top <= e.clientY &&
+              e.clientY <= rect.top + rect.height &&
+              rect.left <= e.clientX &&
+              e.clientX <= rect.left + rect.width;
+
+          if (!clickedInDialog) {
+              dialog.close();
+          }
+      });
+    });
+</script>
+
+</body>
 </html>
