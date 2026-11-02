@@ -79,7 +79,7 @@
   <section id="projects">
     <h2>Projets</h2>
     <h3>Projets terminés</h3>
-    <div class="projects-grid"></div>
+    <div class="projects-grid">
         <div class="project-card">
           <h3>Tableau de suivi des recherches</h3>
           <p>En tant que développeur, je ne me suis pas contenté d'un tableur pour suivre mes candidatures. Cette application permet de retrouver toutes les candidatures avec un suivi simple.</p>
@@ -87,12 +87,11 @@
             Voir le projet
           </button>
         </div>
-    </div>
     <dialog id="modal-projet-7" class="project-modal">
       <button class="close-modal">&times;</button>
       <h2>Tableau de suivi des recherches</h2>
-      <p>Lorsqu'on cherche du travail, toutes personnes que vous allez rencontrer pour vous aider dans votre recherche vont vous dire de faire un tableau de suivi (avec Excel). En tant que développeur, j'ai préféré faire ma propre application d'une part pour continuer à m'exercer en programmation, et d'autre part pour me former et avoir ma première expérience en vibe coding. Mon application ne résume pas uniquement la liste des offres auxquelles on a candidaté, on peut aussi filtrer et trier cette recherche pour mieux s'y retrouver. On peut aussi retrouver facilement la liste des entreprises dans une page dédiée, ainsi que les statistiques sur la base des candidatures effectuées. Avec la méthode du vibe coding, j'ai passé moins de 3 heures à réaliser l'application.
-      </p>
+      <p>Lorsqu'on cherche du travail, toutes personnes que vous allez rencontrer pour vous aider dans votre recherche vont vous dire de faire un tableau de suivi (avec Excel). En tant que développeur, j'ai préféré faire ma propre application d'une part pour continuer à m'exercer en programmation, et d'autre part pour me former et avoir ma première expérience en vibe coding. Mon application ne résume pas uniquement la liste des offres auxquelles on a candidaté, on peut aussi filtrer et trier cette recherche pour mieux s'y retrouver. On peut aussi retrouver facilement la liste des entreprises dans une page dédiée, ainsi que les statistiques sur la base des candidatures effectuées.</p>
+      <p>Cette application a été réalisé en vibe coding avec Claude.</p>
       <h3>Technologies</h3>
       <ul>
         <li>.Net 10 (MAUI)</li>
@@ -101,8 +100,7 @@
       </ul>
       <h3>Logiciels</h3>
       <ul>
-        <li>Visual Studio 2022</li>
-        <li>Visual Studio Code</li>
+        <li>Visual Studio 2026</li>
         <li>SQLite Database Browser</li>
         <li>Github Desktop</li>
         <li>Claude IA</li>
@@ -123,6 +121,88 @@
       <img src="photos/SuiviCandidatures/detail_entreprise.png" alt="Page détail d'une entreprise">
       <img src="photos/SuiviCandidatures/statistiques.png" alt="Page statistiques">
       <img src="photos/SuiviCandidatures/parametres.png" alt="Page paramètres">
+      </div>
+    </dialog>
+
+    <div class="project-card">
+        <h3>Forza Tune Lap</h3>
+        <p>Cette application va permettre de stocker tous les réglages de ses voitures (pas de limite de quantité) ainsi que tous les chronos pour chaque circuit et pour chaque réglage. Il y a aussi une partie classement pour pouvoir comparer chaque voiture selon un critère donné.</p>
+        <button class="project-btn" data-modal="modal-projet-3">
+          Voir le projet
+        </button>
+      </div>
+    </div>
+      <dialog id="modal-projet-3" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Forza Tune Lap</h2>
+        <p>Cette application a plusieurs objectifs. Le premier est de permettre aux joueurs du jeu Forza Motorsport d'y ajouter tous ses réglages (ce qui n'est pas possible dans le jeu lui-même: la limite de sauvegarde du nombre de réglages est inférieure au nombre de voitures présentes). Ainsi, chaque joueur va pouvoir y ajouter pleins de réglages, y compris pour un même modèle (course, drift, drag, ...). L'application dispose aussi d'une partie circuit pour pouvoir sauvegarder chaque chrono de chaque réglage et ainsi pour établir un classement selon le critère choisi.</p>
+        <p>Cette application a été réalisé en vibe coding avec Claude.</p>
+        <h3>Technologies</h3>
+        <ul>
+          <li>.Net 10 (MAUI)</li>
+          <li>SQL (SQLite avec Entity Framework)</li>
+          <li>xUnit (pour les tests unitaires)</li>
+          <li>Claude Code</li>
+        </ul>
+        <h3>Logiciels</h3>
+        <ul>
+        <li>Visual Studio 2026</li>
+        <li>SQLite Database Browser</li>
+        <li>Github Desktop</li>
+        <li>Claude IA</li>
+        </ul>
+        <h3>Comptaibilité</h3>
+      <ul>
+        <li>Windows</li>
+        <li>Android</li>
+        <li>MacOS (non testé)</li>
+        <li>IOS (non testé)</li>
+      </ul>
+        <h3>Statut</h3>
+        <p><a href="https://github.com/Makushimu14/ForzaTuneLap">Version 1.0.0</a> disponible gratuitement dans la section Releases</p>
+        <h3>Galerie photos</h3>
+        <p>À venir.</p>
+      </dialog>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Ça Sent le Soufre</h3>
+        <p>Ça Sent le Soufre est un jeu vidéo qui reprend le jeu de cartes trois-trois jouable jusqu'à 5 joueurs où chaque joueur dispose de 3 cartes cachés et 3 cartes à découvert devant lui, ainsi que 3 cartes dans les mains. Le premier joueur qui n'a plus de carte a gagné.</p>
+        <button class="project-btn" data-modal="modal-projet-10">
+          Voir le projet
+        </button>
+      </div>
+    </div>   
+
+    <dialog id="modal-projet-10" class="project-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Ça Sent Le Soufre</h2>
+        <p>Ça Sent le Soufre est un jeu vidéo qui reprend le jeu de cartes trois-trois jouable jusqu'à 5 joueurs où chaque joueur dispose de 3 cartes cachés et 3 cartes à découvert devant lui, ainsi que 3 cartes dans les mains. Le premier joueur qui n'a plus de carte a gagné. Il faut d'abord se débarrasser de ses cartes dans les mains, puis les cartes visibles devant soi et enfin, celles retournées. Les règles sont assez proches de celles de jeu de carte Le Président. Les cartes vont de 3 (la plus faible) à 10, valet, dame, roi, as, 2 (la plus forte). Contrairement au président, si un joueur pose 2 cartes, le suivant peut en poser le nombre qu'il veut, et si 2 joueurs posent la même carte, le joueur suivant n'est pas obligé de poser la même. Le trois-trois dispose aussi de cartes "à pouvoir". Le joueur choisi dans les paramètres quel(s) pouvoir(s) il ajoute aux parties.</p>
+        <p>Pour pimenter le jeu, j'ai ajouté un mode démon. Le nombre de joueurs est augmenté à 10. De plus, lorsqu'un joueur fini premier, il se voit retirer une carte masquée et affichée devant lui (il reste au minimum 1 carte masquée et 1 carte retournée) et le joueur qui a perdu se voit avec une carte masquée et une carte affichée en plus (pas de limite !). Le nombre de paquet de 52 cartes utilisés dépend du nombre de cartes nécessaires pour chaque joueur.</p>
+        <p>Ce jeu a été réalisé en vibe coding avec Claude.</p>
+        <h3>Jeux d'inspiration</h3>
+        <ul>
+          <li>Jeu de cartes trois-trois</li>
+        </ul>
+        <h3>Technologies</h3>
+        <ul>
+          <li>.Net (Unity 6)</li>
+          <li>Claude Code</li>
+        </ul>
+        <h3>Logiciels</h3>
+        <ul>
+          <li>Visual Studio 2026</li>
+          <li>Unity</li>
+          <li>Github Desktop</li>
+          <li>Claude IA</li>
+        </ul>
+        <h3>Statut</h3>
+        <p><a href="https://github.com/Makushimu14/CaSentLeSoufre">Version 1.1</a> disponible gratuitement dans la section Releases</p>
+        <h3>Galerie photos</h3>
+        <div class="project-images">
+        <img src="photos/CaSentLeSoufre/menu_principal.png" alt="Menu principal">
+        <img src="photos/CaSentLeSoufre/partie.png" alt="Scène de jeu">
+        <img src="photos/CaSentLeSoufre/liste_pouvoirs.png" alt="Liste des pouvoirs">
       </div>
     </dialog>
 
@@ -202,82 +282,48 @@
 
     <div class="projects-grid">
       <div class="project-card">
-        <h3>Forza Help App</h3>
-        <p>Cette application va permettre de stocker tous les réglages de ses voitures (pas de limite de quantité) ainsi que tous les chronos pour chaque circuit et pour chaque réglage. Il y a aussi une partie classement pour pouvoir comparer chaque voiture selon un critère donné.</p>
-        <button class="project-btn" data-modal="modal-projet-3">
-          Voir le projet
-        </button>
-      </div>
-
-      <dialog id="modal-projet-3" class="project-modal">
-        <button class="close-modal">&times;</button>
-        <h2>Froza Help App</h2>
-        <p>Cette application a plusieurs objectifs. Le premier est de permettre aux joueurs du jeu Forza Motorsport d'y ajouter tous ses réglages (ce qui n'est pas possible dans le jeu lui-même: la limite de sauvegarde du nombre de réglages est inférieure au nombre de voitures présentes). Ainsi, chaque joueur va pouvoir y ajouter pleins de réglages, y compris pour un même modèle (course, drift, drag, ...). L'application dispose aussi d'une partie circuit pour pouvoir sauvegarder chaque chrono de chaque réglage et ainsi pour établir un classement selon le critère choisi.
-        </p>
-        <h3>Technologies</h3>
-        <ul>
-          <li>.Net (MAUI)</li>
-          <li>SQL (SQLite)</li>
-        </ul>
-        <h3>Logiciels</h3>
-        <ul>
-          <li>Visual Studio 2022</li>
-          <li>Visual Studio Code</li>
-          <li>SQLite Database Browser</li>
-          <li>Github Desktop</li>
-          <li>Draw io</li>
-          <li>Figma</li>
-        </ul>
-        <h3>Statut</h3>
-        <p>Développement</p>
-        <h3>Galerie photos</h3>
-        <p>À venir.</p>
-      </dialog>
-
-      <div class="project-card">
         <h3>Meet people</h3>
         <p>Cette application permet de faire des nouvelles rencontres que ce soit dans un but amical et / ou amoureux avec un algorithme répondant au mieux aux demandes de chacun.</p>
         <button class="project-btn" data-modal="modal-projet-4">
           Voir le projet
         </button>
       </div>
-    </div>
 
-    <dialog id="modal-projet-4" class="project-modal">
-        <button class="close-modal">&times;</button>
-        <h2>Meet People</h2>
-        <p>Voyant l'algorithme des réseaux sociaux existants ne pas être adaptés pour répondre au mieux la demande des utilisateurs, j'ai décidé de faire ma propre application pour rencontrer des nouvelles personnes. Ici, l'algorithme n'est pas fait pour que l'utilisateur reste le plus longtemps possible sur l'application, mais de répondre au mieux les demandes de chacun. C'est pour cela que l'application est divisée en 2 parties: une partie rencontre amicale et une partie rencontre amoureuse. Pour chacune des parties, l'utilisateur peut renseigner ses critères obligatoires et secondaires qu'il veut retrouver ou à l'inverse, ne pas retrouver afin d'obtenir en suggestion uniquement des profils qui l'intéresse. Cette méthode ne peut fonctionner uniquement si les utilisateurs jouent le jeu et rentrent de façon honnête leur description. Comme il est possible de ne pas vouloir exposer certains critères de soi, il est possible de choisir pour chaque critère s'il est visible ou non. Dans le cas non visible, seul l'algorithme le prendra en compte pour respecter les critères de recherches des autres utilisateurs.
-        </p>
-        <h3>Technologies</h3>
-        <ul>
-          <li>.Net (MAUI, ASP .Net)</li>
-          <li>SQL (SQLite)</li>
-          <li>NoSQL (MongoDB)</li>
-        </ul>
-        <h3>Logiciels</h3>
-        <ul>
-          <li>Visual Studio 2022</li>
-          <li>Visual Studio Code</li>
-          <li>SQLite Database Browser</li>
-          <li>MongoDB Compass</li>
-          <li>Github Desktop</li>
-          <li>Draw io</li>
-          <li>Figma</li>
-        </ul>
-        <h3>Statut</h3>
-        <p>Développement</p>
-        <h3>Galerie photos</h3>
-        <p>À venir.</p>
-    </dialog>
+      <dialog id="modal-projet-4" class="project-modal">
+          <button class="close-modal">&times;</button>
+          <h2>Meet People</h2>
+          <p>Voyant l'algorithme des réseaux sociaux existants ne pas être adaptés pour répondre au mieux la demande des utilisateurs, j'ai décidé de faire ma propre application pour rencontrer des nouvelles personnes. Ici, l'algorithme n'est pas fait pour que l'utilisateur reste le plus longtemps possible sur l'application, mais de répondre au mieux les demandes de chacun. C'est pour cela que l'application est divisée en 2 parties: une partie rencontre amicale et une partie rencontre amoureuse. Pour chacune des parties, l'utilisateur peut renseigner ses critères obligatoires et secondaires qu'il veut retrouver ou à l'inverse, ne pas retrouver afin d'obtenir en suggestion uniquement des profils qui l'intéresse. Cette méthode ne peut fonctionner uniquement si les utilisateurs jouent le jeu et rentrent de façon honnête leur description. Comme il est possible de ne pas vouloir exposer certains critères de soi, il est possible de choisir pour chaque critère s'il est visible ou non. Dans le cas non visible, seul l'algorithme le prendra en compte pour respecter les critères de recherches des autres utilisateurs.
+          </p>
+          <h3>Technologies</h3>
+          <ul>
+            <li>.Net (MAUI, ASP .Net)</li>
+            <li>SQL (SQLite)</li>
+            <li>NoSQL (MongoDB)</li>
+          </ul>
+          <h3>Logiciels</h3>
+          <ul>
+            <li>Visual Studio 2022</li>
+            <li>Visual Studio Code</li>
+            <li>SQLite Database Browser</li>
+            <li>MongoDB Compass</li>
+            <li>Github Desktop</li>
+            <li>Draw io</li>
+            <li>Figma</li>
+          </ul>
+          <h3>Statut</h3>
+          <p>Développement</p>
+          <h3>Galerie photos</h3>
+          <p>À venir.</p>
+      </dialog>
 
-    <div class="projects-grid">
-      <div class="project-card">
+        <div class="project-card">
         <h3>Fusionner 2 jeux vidéo</h3>
         <p>Cette application automatise la transformation du contenu du jeu American Truck Simulator en un mod utilisable pour le jeu Euro Truck Simulator 2 et inversement.</p>
         <button class="project-btn" data-modal="modal-projet-5">
           Voir le projet
         </button>
       </div>
+    </div>
 
       <dialog id="modal-projet-5" class="project-modal">
         <button class="close-modal">&times;</button>
@@ -301,6 +347,7 @@
         <p>À venir.</p>
       </dialog>
 
+    <div class="projects-grid">
       <div class="project-card">
         <h3>Générateur de map</h3>
         <p>Cette application génère un map réaliste compatible pour le jeu Euro Truck Simulator 2 avec un climat donné.</p>
@@ -308,9 +355,8 @@
           Voir le projet
         </button>
       </div>
-    </div>
 
-    <dialog id="modal-projet-6" class="project-modal">
+      <dialog id="modal-projet-6" class="project-modal">
         <button class="close-modal">&times;</button>
         <h2>Générateur de map</h2>
         <p>Comme énoncé dans le projet précédent (Fusionner 2 jeux vidéo), SCS Software rend possible la création de mods sur leurs jeux, et notamment la création de nouvelles maps. C'est dans quoi je me suis lancé depuis quelques années (voir projet Mapping). Je me suis vite rendu compte que créer une map est quelque chose de très long à faire quand on est seul et qu'on a d'autres activités à côté. C'est pourquoi j'ai eu l'idée de créer une IA qui serait capable d'effectuer ce travail de mapping à ma place en respectant certains critères (style de routes d'un pays, climat, paysages).
@@ -331,9 +377,8 @@
         <p>Cahier des charges</p>
         <h3>Galerie photos</h3>
         <p>À venir.</p>
-    </dialog>
-
-    <div class="projects-grid">
+      </dialog>
+      
       <div class="project-card">
         <h3>Univers viewer</h3>
         <p>Cette application permet de se déplacer dans l'espace (possibilité en casque VR) à travers tout l'univers pour voir les différents objets qui le composent.</p>
@@ -378,7 +423,6 @@
           Voir le projet
         </button>
       </div>
-
       <dialog id="modal-projet-9" class="project-modal">
         <button class="close-modal">&times;</button>
         <h2>Tactic Sub Wars</h2>
@@ -413,59 +457,13 @@
     </dialog>
 
       <div class="project-card">
-        <h3>Le trois-trois</h3>
-        <p>Le trois-trois est un jeu de cartes jusqu'à 5 joueurs où chaque joueur dispose de 3 cartes cachés et 3 cartes à découvert devant lui, ainsi que 3 cartes dans les mains. Le premier joueur qui n'a plus de carte a gagné.</p>
-        <button class="project-btn" data-modal="modal-projet-10">
-          Voir le projet
-        </button>
-      </div>
-    </div>   
-
-    <dialog id="modal-projet-10" class="project-modal">
-        <button class="close-modal">&times;</button>
-        <h2>Le trois-trois</h2>
-        <p>Le trois-trois est un jeu de cartes jusqu'à 5 joueurs où chaque joueur dispose de 3 cartes cachés et 3 cartes à découvert devant lui, ainsi que 3 cartes dans les mains. Le premier joueur qui n'a plus de carte a gagné. Il faut d'abord se débarrasser de ses cartes dans les mains, puis les cartes visibles devant soi et enfin, celles retournées. Les règles sont assez proches de celles de jeu de carte Le Président. Les cartes vont de 3 (la plus faible) à 10, valet, dame, roi, as, 2 (la plus forte). Contrairement au président, si un joueur pose 2 cartes, le suivant peut en poser le nombre qu'il veut, et si 2 joueurs posent la même carte, le joueur suivant n'est pas obligé de poser la même. Le trois-trois dispose aussi de cartes "à pouvoir":
-        </p>
-        <ul>
-          <li>Sept ou tête: lorsqu'un sept est posé, le joueur suivant ne peut poser que les cartes suivantes: sept, valet, dame et roi</li>
-          <li>Neuf ou moins: lorsqu'un neuf est posé, le joueur suivant doit poser une carte inférieure ou égale au neuf (le deux est accepté)</li>
-          <li>Dix ferme: lorsqu'un dix est posé, on retire toutes les cartes du tas et le joueur qui a posé le dix rejoue</li>
-          <li>Deux rejoue: lorsqu'un deux est posé, le joueur qui l'a posé rejoue</li>
-        </ul>
-        <p>Pour pimenter le jeu, j'ai ajouté un mode démon. Le nombre de joueurs est augmenté à 10. De plus, lorsqu'un joueur fini premier, il se voit retirer une carte masquée et affichée devant lui (il reste au minimum 1 carte masquée et 1 carte retournée) et le joueur qui a perdu se voit avec une carte masquée et une carte affichée en plus (pas de limite !). Le nombre de paquet de 52 cartes utilisés dépend du nombre de cartes nécessaires pour chaque joueur.
-        </p>
-        <h3>Jeux d'inspiration</h3>
-        <ul>
-          <li>Jeu de cartes trois-trois</li>
-        </ul>
-        <h3>Technologies</h3>
-        <ul>
-          <li>.Net (Unity)</li>
-        </ul>
-        <h3>Logiciels</h3>
-        <ul>
-          <li>Visual Studio 2022</li>
-          <li>Visual Studio Code</li>
-          <li>Unity</li>
-          <li>Github Desktop</li>
-          <li>Draw io</li>
-          <li>Figma</li>
-        </ul>
-        <h3>Statut</h3>
-        <p>Version alpha</p>
-        <h3>Galerie photos</h3>
-        <p>À venir.</p>
-    </dialog>
-
-    <div class="projects-grid">
-      <div class="project-card">
         <h3>Backrooms: Nightmare Restarting</h3>
         <p>Ce jeu nous fait tomber dans les backrooms en mélangeant ambiance backrooms et lieux réels pouvant laisser un mauvais souvenir (école, hôpital, ...).</p>
         <button class="project-btn" data-modal="modal-projet-11">
           Voir le projet
         </button>
       </div>
-
+    </div>
       <dialog id="modal-projet-11" class="project-modal">
         <button class="close-modal">&times;</button>
         <h2>Backrooms: Nightmare Restarting</h2>
@@ -496,6 +494,7 @@
         <p>À venir.</p>
     </dialog>
 
+    <div class="projects-grid">
       <div class="project-card">
         <h3>World Conqueror</h3>
         <p>Envie de conquérir l'univers ? Dans World Conqueror, on peut se balader de galaxie en galaxie, de planète en planète et acheter tous ce que vous voulez.</p>
@@ -503,7 +502,6 @@
           Voir le projet
         </button>
       </div>
-    </div>
 
     <dialog id="modal-projet-12" class="project-modal">
         <button class="close-modal">&times;</button>
@@ -536,7 +534,6 @@
         <p>À venir.</p>
     </dialog>
 
-    <div class="projects-grid">
       <div class="project-card">
         <h3>World Shooter</h3>
         <p>Vous avez aimé les jeux Luxor ? World Shooter repose sur le même principe à la différence que les niveaux vous font voyager à travers toute la planète.</p>
@@ -544,6 +541,7 @@
           Voir le projet
         </button>
       </div>
+    </div>
 
       <dialog id="modal-projet-13" class="project-modal">
         <button class="close-modal">&times;</button>
@@ -573,6 +571,7 @@
         <p>À venir.</p>
     </dialog>
 
+    <div class="projects-grid">
       <div class="project-card">
         <h3>Fight Royal</h3>
         <p>Un match, deux joueurs. Chaque joueur dispose de 8 personnages à positionner de façon stratégique pour attaquer l'ennemi et lui retirer toute sa vie.</p>
@@ -580,7 +579,6 @@
           Voir le projet
         </button>
       </div>
-    </div>
 
     <dialog id="modal-projet-14" class="project-modal">
         <button class="close-modal">&times;</button>
@@ -612,7 +610,6 @@
         <p>À venir.</p>
     </dialog>
 
-    <div class="projects-grid">
       <div class="project-card">
         <h3>Tactical Unit</h3>
         <p>Une équipe en attaque, l'autre en défense. L'équipe attaquante doit poser une bombe dans les endroits indiqués et la faire exploser. Le round s'arrête lorsque toutes les personnes d'une même équipe n'ont plus de vie, lorsque la bombe a explosé ou a été neutralisé. La partie s'arrête au bout de 10 rounds gagnés.</p>
